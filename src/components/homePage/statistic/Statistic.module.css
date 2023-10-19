@@ -1,0 +1,9 @@
+.statistic {
+   margin-bottom: 120px;
+}
+
+.statistic__inner {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   gap: 35px;
+}

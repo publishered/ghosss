@@ -1,0 +1,24 @@
+.item {
+   border-radius: 10px;
+   border: 1px solid var(--text-secondary-color);
+   overflow: hidden;
+   color: var(--white-color);
+}
+
+.item__title {
+   padding: 6px;
+   font-size: 12px;
+   font-weight: 600;
+   text-align: center;
+   line-height: normal;
+   background-color: var(--ui-color);
+}
+
+.item__body {
+   padding: 20px 10px 30px;
+   text-align: center;
+   color: #FFF;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: normal;
+}

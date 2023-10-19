@@ -1,0 +1,27 @@
+.upload {
+   outline: none;
+   font-family: inherit;
+   color: var(--text-secondary-color);
+   background-color: transparent;
+   border: 1px solid var(--text-secondary-color);
+   padding: 45px 46.5px;
+   font-weight: 600;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 10px;
+   width: 100%;
+}
+
+.upload:hover .upload__image {
+   transform: scale(1.2) rotate(360deg);
+}
+
+.upload__image {
+   display: inline-block;
+   margin-bottom: 10px;
+   transition: .4s;
+}
+
+.upload__input {
+   display: none;
+}

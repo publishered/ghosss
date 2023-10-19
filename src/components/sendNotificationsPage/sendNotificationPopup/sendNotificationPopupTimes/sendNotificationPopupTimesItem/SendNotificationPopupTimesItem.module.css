@@ -1,0 +1,15 @@
+.times__item {
+   display: flex;
+   justify-content: space-between;
+   gap:  25px;
+}
+
+.times__item > div {
+   justify-content: space-between;
+   flex: 1 0 auto;
+}
+
+.times__hours {
+   max-width: 180px;
+   padding: 9.5px;
+}

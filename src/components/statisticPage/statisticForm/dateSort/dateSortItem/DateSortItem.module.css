@@ -1,0 +1,92 @@
+.date__item {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   position: relative;
+}
+
+.date__item-label {
+   font-weight: 600;
+}
+
+.date__item-current-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   border: 1px solid var(--text-secondary-color);
+   padding: 10px;
+   cursor: pointer;
+   position: relative;
+   z-index: 4;
+}
+
+.date__item-current {
+   font-weight: 500;
+}
+
+.date__item-current-inner {
+   position: relative;
+   max-width: 180px;
+   width: 100%;
+}
+
+div.calendar {
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform: translateY(-80%);
+   opacity: 0;
+   pointer-events: none;
+   transition: .3s;
+   font-family: inherit;
+   background-color: var(--background-color);
+   border-radius: 10px 10px 0px 0px ;
+   overflow: hidden;
+   border: 1px solid var(--text-secondary-color);
+   padding-bottom: 20px;
+   border-bottom: none;
+
+   z-index: 10;
+}
+
+div.calendar.bottom {
+   border: 1px solid var(--text-secondary-color);
+   padding-bottom: 20px;
+   border-top: none;
+   bottom: 0;
+   top: auto;
+   border-radius: 0px 0px 10px 10px;
+   padding-top: 20px;
+   padding-bottom: 0;
+}
+
+div.calendar.open {
+   transform: translateY(calc(-100% + 15px));
+   opacity: 1;
+   pointer-events: all;
+}
+
+div.calendar.bottom.open {
+   transform: translateY(calc(100% - 15px));
+}
+
+div.calendar button {
+   color: var(--text-color);
+   font-family: inherit;
+}
+
+.calendar abbr[title] {
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: var(--ui-color);
+   font-size: 12px;
+   font-weight: 600;
+}
+
+
+/* .calendar .react-calendar__tile--now {
+   background: transparent;
+} */
+

@@ -1,0 +1,15 @@
+.interval {
+   display: flex;
+   justify-content: space-between;
+   gap:  25px;
+   align-items: center;
+}
+
+.interval__input {
+   max-width: 180px;
+   padding: 9.5px;
+}
+
+.interval__label {
+   font-weight: 600;
+}

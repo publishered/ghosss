@@ -1,0 +1,112 @@
+.table__body-item {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 2fr 3fr 1fr;
+   justify-items: center;
+   align-items: center;
+   border-radius: 9px 9px 0px 0px;
+}
+
+.table__body-item {
+   font-weight: 500;
+   border-bottom: 1px solid var(--text-secondary-color);
+}
+
+.table__body-item:last-child {
+   border-bottom: none;
+}
+
+.table__body-item > span {
+   padding: 10px;
+   text-align: center;
+}
+
+.table__body-item--active-status {
+   color: #2EFF81;
+}
+
+.table__body-item--stopped-status {
+   color: #FE284A;
+}
+
+.table__body-item--image, .table__body-item--button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.table__body-item--button {
+   position: relative;
+}
+
+.table__body-item-image, .table__body-item-icon {
+   object-fit: contain;
+}
+
+.table__body-item-btn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   width: 20px;
+   height: 14px;
+   margin: 0;
+   padding: 0;
+   background: none;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.table__body-item-btn.active {
+   transform: rotate(270deg);
+}
+
+.table__body-item-btn span {
+   width: 100%;
+   height: 2px;
+   border-radius: 5px;
+   background-color: var(--ui-color);
+}
+
+.table__body-item-action {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, calc(80%));
+   bottom: 0;
+   z-index: 3;
+
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   border: 1px solid var(--text-secondary-color);
+   width: 110px;
+   background-color: var(--background-color);
+   padding: 5px 0px;
+
+   pointer-events: none;
+   opacity: 0;
+   transition: .2s;
+}
+
+.table__body-item-action.open {
+   pointer-events: all;
+   opacity: 1;
+   transform: translate(-50%, calc(100% + 10px));
+}
+
+.table__body-item-action > span {
+   padding: 5px;
+   cursor: pointer;
+   transition: .1s;
+   font-weight: 500;
+   line-height: normal;
+}
+
+.table__body-item-action > span:hover {
+   color: var(--ui-color);
+}
+
+.table__body-item-action-delete {
+   color: #FE284A;
+}

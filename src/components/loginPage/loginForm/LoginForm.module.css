@@ -1,0 +1,48 @@
+.form {
+   border-radius: 10px;
+   border: 1px solid var(--text-secondary-color);
+   padding: 30px 40px;
+   max-width: 470px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.form__title {
+   font-size: 32px;
+   font-weight: 700;
+   line-height: normal;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.form__inputs {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin-bottom: 31px;
+}
+
+.form__btn {
+   padding: 14.5px;
+   width: 100%;
+}
+
+.form__success {
+   background-color: #2EFF81;
+   border-color: #2EFF81;
+}
+
+.form__failed {
+   background-color: #FE284A;
+   border-color: #FE284A;
+   cursor: not-allowed;
+}
+
+.form__success:hover {
+   color: #2EFF81;
+}
+
+.form__failed:hover {
+   color: currentColor;
+   background-color: #FE284A;
+}

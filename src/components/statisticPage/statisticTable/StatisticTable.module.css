@@ -1,0 +1,31 @@
+.table {
+   border-radius: 10px;
+   border: 1px solid var(--text-secondary-color);
+   overflow: hidden;
+}
+
+.table__head, .table__body-item {
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   justify-items: center;
+}
+
+.table__head {
+   background-color: var(--ui-color);
+}
+
+.table__head-title {
+   padding: 12px 10px;
+   color: var(--white-color);
+   font-weight: 600;
+}
+
+.table__body-item {
+   padding: 10px;
+   font-weight: 500;
+   border-bottom: 1px solid var(--text-secondary-color);
+}
+
+.table__body-item:last-child {
+   border-bottom: none;
+}

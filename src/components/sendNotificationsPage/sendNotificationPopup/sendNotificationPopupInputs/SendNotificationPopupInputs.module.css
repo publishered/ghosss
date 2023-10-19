@@ -1,0 +1,13 @@
+.inputs {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.input, .textarea {
+   width: 100%;
+}
+
+span.dropdown {
+   padding: 14px 10px;
+}

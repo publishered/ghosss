@@ -1,0 +1,21 @@
+.textarea {
+   border-radius: 10px;
+   border: 1px solid var(--ui-color);
+   color: var(--text-color);
+   padding: 14.5px 9px;
+   background-color: transparent;
+   outline: none;
+   font-family: inherit;
+   text-align: center;
+   font-weight: 600;
+   min-height: 70px;
+   resize: none;
+   font-size: inherit;
+}
+
+.textarea::placeholder {
+   color: var(--text-secondary-color);
+   text-align: center;
+   font-family: inherit;
+   font-size: inherit;
+}

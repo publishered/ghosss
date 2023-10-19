@@ -1,0 +1,23 @@
+.popup {
+   display: flex;
+   gap: 69px;
+}
+
+.left {
+   max-width: 590px;
+   width: 100%;
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.right {
+   max-width: 480px;
+   width: 100%;
+}
+
+.button {
+   display: block;
+   width: 100%;
+   padding: 15px;
+}

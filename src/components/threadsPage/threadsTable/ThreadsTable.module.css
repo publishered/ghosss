@@ -1,0 +1,23 @@
+.table {
+   border-radius: 10px;
+   border: 1px solid var(--text-secondary-color);
+   /* overflow: hidden; */
+}
+
+.table__head {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   justify-items: center;
+   align-items: center;
+   border-radius: 9px 9px 0px 0px;
+}
+
+.table__head {
+   background-color: var(--ui-color);
+}
+
+.table__head-title {
+   padding: 12px 10px;
+   color: var(--white-color);
+   font-weight: 600;
+}

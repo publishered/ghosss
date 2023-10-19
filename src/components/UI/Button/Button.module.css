@@ -1,0 +1,17 @@
+.btn {
+   font-weight: 500;
+   border-radius: 10px;
+   background-color: var(--ui-color);
+   transition: .15s;
+   border: 2px solid var(--ui-color);
+   font-family: inherit;
+   color: #fff;
+   cursor: pointer;
+   outline: none;
+   display: block;
+}
+
+.btn:hover {
+   background-color: transparent;
+   color: var(--ui-color)
+}

@@ -1,0 +1,9 @@
+.login {
+   color: #3B82F6;
+   font-weight: 700;
+   transition: .15s;
+}
+
+.login:hover {
+   color: var(--text-color);
+}
