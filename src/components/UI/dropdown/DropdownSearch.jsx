@@ -74,9 +74,10 @@ const DropdownSearch = ({list, className, selectedFirst, placeholder, addValue, 
             value={searchValue}
             onFocus={focusInputHandler}
          />
-         {selectedValue.map(value => <span
+         {selectedValue.map((value, index) => <span
             className={stylesSearch['dropdown__multiply-item']}
             onClick={() => itemClickHandler(value)}
+            key={index}
          >
             {value.text}
          </span>
