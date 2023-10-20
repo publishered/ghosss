@@ -1,3 +1,4 @@
+import { NextResponse } from 'next/server'
 import settings from '../services/settings'
 
 export async function middleware(request) {
@@ -15,8 +16,10 @@ export async function middleware(request) {
       response = await response.text()
    }
 
+   console.log(response)
+
    if (response !== 'success') {
-      // return NextResponse.redirect(new URL('/login', request.url))
+      return NextResponse.redirect(new URL('/login', request.url))
    }
    
 }
