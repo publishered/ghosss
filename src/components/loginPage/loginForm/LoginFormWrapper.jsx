@@ -42,6 +42,7 @@ const LoginFormWrapper = () => {
 
          setAuthState('success')
          // setTimeout(() => push('/'), 2000)
+         console.log('pushed')
          push('/')
       }
 
