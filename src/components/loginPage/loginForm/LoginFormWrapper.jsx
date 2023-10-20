@@ -41,7 +41,8 @@ const LoginFormWrapper = () => {
          cookies.set('auth_token', response_token, {path: '/', expires: new Date(Date.now()+2592000000)})
 
          setAuthState('success')
-         setTimeout(() => push('/'), 2000)
+         // setTimeout(() => push('/'), 2000)
+         push('/')
       }
 
       if (response_token === 'error') {
