@@ -42,6 +42,7 @@
    font-size: 12px;
    font-weight: 400;
    line-height: normal;
+   word-break: break-all;
 }
 
 .preview__push-text {
@@ -49,6 +50,7 @@
    font-size: 10px;
    font-weight: 400;
    line-height: normal;
+   word-break: break-all;
 }
 
 .preview__push-subtext {

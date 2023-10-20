@@ -4,7 +4,6 @@ import DropdownSearch from '../dropdown/DropdownSearch'
 import styles from './DropdownCountry.module.css'
 
 const DropdownCountry = ({addValue, removeValue, value = []}) => {
-   console.log(value)
    const [countryList, setCountryList] = useState([])
 
    useEffect(() => {
