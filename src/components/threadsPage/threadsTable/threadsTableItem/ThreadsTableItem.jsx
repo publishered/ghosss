@@ -44,7 +44,7 @@ const ThreadsTableItem = ({id, name, link, setPushSettings, setIsModalOpen, setT
 
    return <div className={styles['table__body-item']}>
       <span>{name}</span>
-      <span>{link}</span>
+      <span>{`<script src="${link}"></script>`}</span>
       <span className={styles['table__body-item--button']}>
          <button 
             className={`${styles['table__body-item-btn']} ${isOpenActionMenu ? styles['active'] : ''}`}
