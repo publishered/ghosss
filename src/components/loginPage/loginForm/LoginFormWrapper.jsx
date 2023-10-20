@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Cookies from 'universal-cookie'
 import login from '../../../../services/authentication/login'
@@ -14,14 +13,11 @@ const LoginFormWrapper = () => {
    const usernameInputHandler = e => setUsernameInputValue(e.target.value)
    const passwordInputHandler = e => setPasswordInputValue(e.target.value)
 
-   const {push} = useRouter()
-
    const formSubmitHandler = async e => {
 
       e.preventDefault()
 
       if (authState === 'success') {
-         push('/')
          return
       }
 
@@ -41,9 +37,7 @@ const LoginFormWrapper = () => {
          cookies.set('auth_token', response_token, {path: '/', expires: new Date(Date.now()+2592000000)})
 
          setAuthState('success')
-         // setTimeout(() => push('/'), 2000)
-         console.log('pushed')
-         push('/')
+         setTimeout(() => window.location.href = '/', 2000)
       }
 
       if (response_token === 'error') {
