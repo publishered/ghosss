@@ -2,7 +2,7 @@
 const nextConfig = {
    reactStrictMode: true,
    images: {
-      domains: ['push-t.gg', 'back-push.juicer-dev.pro'],
+      domains: ['captchaallow.site'],
    },
 }
 
