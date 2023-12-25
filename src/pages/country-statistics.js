@@ -23,7 +23,7 @@ const CountryStatistics = () => {
 
          statisticSubByCountries = statisticSubByCountries.map(stats => {
             const findedCountry = countryDecodeList.find(item => item.code === stats.country_code)
-            return {country: findedCountry.name ?? item.code, subscribes: stats.count_subs}
+            return {country: findedCountry?.name ?? item.code, subscribes: stats.count_subs}
          })
 
          setDataset(statisticSubByCountries)
